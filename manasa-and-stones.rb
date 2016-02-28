@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/bin/ruby
 gets.strip.to_i.times{
   n = gets.strip.to_i
   a = gets.strip.to_i
