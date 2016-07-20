@@ -1,5 +1,6 @@
-import java.util.*;
-import java.security.*;
+import java.security.Permission;
+import java.util.Scanner;
+
 public class Solution{
   public static void main(String[] args){
     Do_Not_Terminate.forbidExit();

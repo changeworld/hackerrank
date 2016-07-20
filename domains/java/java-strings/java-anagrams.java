@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Solution{
   static boolean isAnagram(String a, String b){
