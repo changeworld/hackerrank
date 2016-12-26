@@ -1,4 +1,3 @@
-#!/bin/ruby
 object Solution {
   def main(args: Array[String]) {
     val a = readLine()
