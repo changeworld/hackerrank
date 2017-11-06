@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Solution {
     static boolean isAnagram(String a, String b) {
-        return sort(a.toLowerCase()).equals(sort(b.toLowerCase()))
+        return sort(a.toLowerCase()).equals(sort(b.toLowerCase()));
     }
 
     static String sort(String s) {
