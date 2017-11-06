@@ -1,2 +1,4 @@
 inspecode:
-  checkstyle: auto-fix
+  checkstyle:
+    auto-fix: true
+    config-file: /google_checks.xml
