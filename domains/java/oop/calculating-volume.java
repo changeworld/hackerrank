@@ -66,9 +66,7 @@ public class Solution {
             while (T-- > 0) {
                 double volume = 0.0;
                 int ch = cal.get_int_val();
-                if (ch == 1) {git log
-                        git
-
+                if (ch == 1) {
                     int a = cal.get_int_val();
                     volume = Calculate.do_calc().get_volume(a);
                 } else if (ch == 2) {
