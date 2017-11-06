@@ -1,17 +1,7 @@
 import java.util.Scanner;
 
 public class Solution {
-
-
-
-
-
-
-
-
-
-
-    static int B, H;
+  static int B, H;
   static boolean flag;
 
   static {
