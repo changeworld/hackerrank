@@ -26,7 +26,7 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.next());
         for (; t > 0; t--) {
-            int n = Integer.parseInt(sc.next()),
+            int n = Integer.parseInt(sc.next());
             int m = Integer.parseInt(sc.next());
             int[] a = new int[n];
             for (int i = 0; i < n; i++) a[i] = sc.nextInt();
