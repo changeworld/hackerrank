@@ -6,7 +6,8 @@ public class Solution {
     }
   }
   // Writed your code here
-  public static void main(String args[]){
+
+  public static void main(String args[]) {
     Integer[] intArray = { 1, 2, 3 };
     String[] stringArray = { "Hello", "World" };
     printArray(intArray);
