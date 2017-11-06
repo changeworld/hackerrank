@@ -8,9 +8,11 @@ abstract class Book {
     title = t;
     author = a;
   }
+
   abstract void display();
 }
 // Write MyBook Class
+
 class MyBook extends Book {
   int price;
 

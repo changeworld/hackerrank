@@ -4,6 +4,7 @@ interface AdvancedArithmetic {
   int divisorSum(int n);
 }
 //Write your code here
+
 class Calculator implements AdvancedArithmetic {
   @Override
   public int divisorSum(int n) {
@@ -25,7 +26,7 @@ class Solution {
 
     AdvancedArithmetic myCalculator = new Calculator();
     int sum = myCalculator.divisorSum(n);
-    System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName() );
+    System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName());
     System.out.println(sum);
   }
 }
