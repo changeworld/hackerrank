@@ -6,3 +6,9 @@ inspecode:
   yapf: default
   autopep8: auto-fix
   misspell: auto-fix
+  cpd: default
+  reek: default
+  unused: default
+  grep: default
+  misspell: auto-fix
+  rails_best_practices: default
