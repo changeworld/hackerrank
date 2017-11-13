@@ -2,3 +2,7 @@ inspecode:
   checkstyle:
     auto-fix: true
     config-file: /google_checks.xml
+  pyflakes: default
+  yapf: default
+  autopep8: auto-fix
+  misspell: auto-fix
