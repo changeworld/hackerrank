@@ -6,26 +6,26 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int T = scan.nextInt();
+        int t = scan.nextInt();
         int max = 0;
-        int[] N = new int[T];
-        for (int i = 0; i < T; i++) {
-            N[i] = scan.nextInt();
-            if (N[i] > max) {
-                max = N[i];
+        int[] n = new int[t];
+        for (int i = 0; i < t; i++) {
+            n[i] = scan.nextInt();
+            if (n[i] > max) {
+                max = n[i];
             }
         }
         ArrayList<Integer> primes = getPrimes(max);
         Collections.sort(primes);
-        for (int i = 0; i < N.length; i++) {
-            System.out.println(getSum(primes, N[i]));
+        for (int i = 0; i < n.length; i++) {
+            System.out.println(getSum(primes, n[i]));
         }
     }
 
-    static long getSum(ArrayList<Integer> primes, int N) {
+    static long getSum(ArrayList<Integer> primes, int n) {
         long sum = 0;
         for (int i = 0; i < primes.size(); i++) {
-            if (primes.get(i) <= N) {
+            if (primes.get(i) <= n) {
                 sum += primes.get(i);
             } else {
                 break;
@@ -34,8 +34,8 @@ public class Solution {
         return sum;
     }
 
-    static ArrayList<Integer> getPrimes(int N) {
-        boolean[] list = new boolean[N + 1];
+    static ArrayList<Integer> getPrimes(int n) {
+        boolean[] list = new boolean[n + 1];
         Arrays.fill(list, true);
         ArrayList<Integer> primes = new ArrayList();
         list[0] = false;
