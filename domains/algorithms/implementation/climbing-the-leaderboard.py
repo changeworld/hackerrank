@@ -1,6 +1,5 @@
 #!/bin/python3
 
-import sys
 from bisect import bisect_right
 
 n = int(input().strip())

@@ -1,7 +1,5 @@
 #!/bin/python3
 
-import sys
-
 n,m = input().strip().split(' ')
 n,m = int(n), int(m)
 c = sorted(int(station) for station in input().split())

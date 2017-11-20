@@ -1,5 +1,3 @@
-import re
-
 S = input()
 k = input()
 a = [i for i in range(len(S) - len(k) + 1) if S[i:i+len(k)] == k]

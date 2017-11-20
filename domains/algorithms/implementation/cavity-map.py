@@ -1,7 +1,5 @@
 #!/bin/python3
 
-import sys
-
 n = int(input().strip())
 grid = []
 grid_i = 0

@@ -1,5 +1,3 @@
-import itertools
-
 def prev_permutation(s):
     return compute_permutations(s, lambda x, y: x >= y)
 
