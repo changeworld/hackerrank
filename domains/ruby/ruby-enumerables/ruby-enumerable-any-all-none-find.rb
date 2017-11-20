@@ -15,8 +15,8 @@ end
 
 def func_find(hash)
   # Check and return the first object that satisfies the property
-  # [key, value] pair where the key is an Integer and the value is < 20 
-  # or [key, value] pair where the key is a String and the value is a String starting 
+  # [key, value] pair where the key is an Integer and the value is < 20
+  # or [key, value] pair where the key is a String and the value is a String starting
   # with the character `a`
   hash.find {|key, value|
     key.is_a?(Integer) && value.is_a?(Integer) && value.to_i < 20 ||

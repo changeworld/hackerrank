@@ -10,7 +10,7 @@ s.upto(e){|i|
   answer.push(i) if i == split_digits.inject(0){|sum, x| sum + x}
 }
 if answer.length == 0
-  puts "INVALID RANGE" 
-else 
+  puts "INVALID RANGE"
+else
   puts answer.join(' ')
 end

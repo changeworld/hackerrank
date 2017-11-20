@@ -31,5 +31,5 @@ id = input[2].to_i
 numScores = gets.to_i
 scores = gets.strip().split().map!(&:to_i)
 s = Student.new(firstName, lastName, id, scores)
-s.printPerson           
+s.printPerson
 print("\nGrade: " + s.calculate)

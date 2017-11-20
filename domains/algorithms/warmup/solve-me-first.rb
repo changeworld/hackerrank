@@ -1,5 +1,5 @@
 def solveMeFirst (a, b)
-  # Hint: Type return a+b below   
+  # Hint: Type return a+b below
   a + b
 end
 

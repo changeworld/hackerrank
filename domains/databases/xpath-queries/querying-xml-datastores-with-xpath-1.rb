@@ -3,11 +3,11 @@ require 'rexml/document'
 include REXML
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-xmlText = "" 
+xmlText = ''
 
 # Read the input XML Fragment
 while line = gets()
-   xmlText += line
+  xmlText += line
 end
 
 doc = Document.new xmlText
