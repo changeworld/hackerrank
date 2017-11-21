@@ -1,6 +1,8 @@
 #!/bin/ruby
-def calc(n)
-  n*(n+1)/2
+
+# :reek:UtilityFunction:public_methods_only: true
+def calc(num)
+  num*(num+1)/2
 end
 
 gets.strip.to_i.times{
