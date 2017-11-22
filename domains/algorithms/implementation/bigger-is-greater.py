@@ -17,7 +17,7 @@ def compute_permutations(s, comparator):
     while comparator(s[j], s[i - 1]):
         j -= 1
     s[i - 1], s[j] = s[j], s[i - 1]
-    s[i:] = s[n - 1: i - 1: -1]
+    s[i:] = s[n - 1:i - 1:-1]
     return True
 
 

@@ -2,6 +2,7 @@ from html.parser import HTMLParser
 
 
 class CustumHTMLParser(HTMLParser):
+
     def handle_starttag(self, tag, attrs):
         print('Start : ' + tag)
         for e in attrs:

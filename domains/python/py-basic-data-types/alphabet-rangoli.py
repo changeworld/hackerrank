@@ -7,7 +7,8 @@ def print_rangoli(size):
     for _ in range(height):
         i = min(_, height - _ - 1)
         print('-' * (height - 2 * i - 1) +
-              '-'.join(list(word[:i] + word[i] + word[:i][::-1])) + '-' * (height - 2 * i - 1))
+              '-'.join(list(word[:i] + word[i] + word[:i][::-1])) + '-' *
+              (height - 2 * i - 1))
 
 
 if __name__ == '__main__':

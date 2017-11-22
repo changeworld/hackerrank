@@ -3,6 +3,7 @@ from collections import OrderedDict
 
 
 class MapReduce:
+
     def __init__(self):
         self.intermediate = OrderedDict()
         self.result = []
@@ -21,7 +22,8 @@ class MapReduce:
             reducer(key, self.intermediate[key])
         self.result.sort()
         for item in self.result:
-            print "{\"key\":\"" + item[0] + "\",\"value\":\"" + str(item[1]) + "\"}"
+            print "{\"key\":\"" + item[0] + "\",\"value\":\"" + str(
+                item[1]) + "\"}"
 
 
 mapReducer = MapReduce()

@@ -9,8 +9,8 @@ for i in range(thickness):
 
 # Top Pillars
 for i in range(thickness + 1):
-    print((c * thickness).center(thickness * 2) +
-          (c * thickness).center(thickness * 6))
+    print((c * thickness).center(thickness * 2) + (c * thickness).center(
+        thickness * 6))
 
 # Middle Belt
 for i in range((thickness + 1) // 2):
@@ -18,8 +18,8 @@ for i in range((thickness + 1) // 2):
 
 # Bottom Pillars
 for i in range(thickness + 1):
-    print((c * thickness).center(thickness * 2) +
-          (c * thickness).center(thickness * 6))
+    print((c * thickness).center(thickness * 2) + (c * thickness).center(
+        thickness * 6))
 
 # Bottom Cone
 for i in range(thickness):

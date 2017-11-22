@@ -3,6 +3,7 @@ from collections import OrderedDict
 
 
 class MapReduce:
+
     def __init__(self):
         self.intermediate = OrderedDict()
         self.result = []
