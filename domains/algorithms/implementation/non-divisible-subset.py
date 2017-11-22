@@ -4,7 +4,7 @@ c = set(s)
 subset = 0
 index = []
 for i in c:
-    if i == 0 or i == k / 2: 
+    if i == 0 or i == k / 2:
         subset += 1
         index.append(i)
     else:

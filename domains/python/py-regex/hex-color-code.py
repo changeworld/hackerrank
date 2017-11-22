@@ -7,7 +7,7 @@ for _ in range(int(input())):
         pass
     elif str[-1] == '{':
         css = True
-    elif str[-1]=='}':
+    elif str[-1] == '}':
         css = False
     elif css:
         for e in re.finditer(r'#[0-9a-fA-F]+', str):

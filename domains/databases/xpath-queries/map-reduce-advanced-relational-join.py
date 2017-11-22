@@ -1,5 +1,7 @@
 import sys
 from collections import OrderedDict
+
+
 class MapReduce:
     def __init__(self):
         self.intermediate = OrderedDict()
@@ -21,20 +23,24 @@ class MapReduce:
         for item in self.result:
             print item
 
+
 mapReducer = MapReduce()
+
 
 def mapper(record):
     a = record.strip().split()
     if a[0] == 'Department':
         mapReducer.emitIntermediate(a[1], a[2])
     if a[0] == 'Employee':
-        mapReducer.emitIntermediate(a[2], '$'+a[1])
+        mapReducer.emitIntermediate(a[2], '$' + a[1])
+
 
 def reducer(key, list_of_values):
     a = sorted(list_of_values)
     name = a[0][1:]
     for e in a[1:]:
         mapReducer.emit((key, name, e))
+
 
 if __name__ == '__main__':
     inputData = []

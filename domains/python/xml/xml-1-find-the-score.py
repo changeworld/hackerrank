@@ -1,9 +1,11 @@
 import sys
 import xml.etree.ElementTree as etree
 
+
 def get_attr_number(node):
     score = len(node.attrib)
     return score + sum((get_attr_number(child) for child in node))
+
 
 if __name__ == '__main__':
     sys.stdin.readline()

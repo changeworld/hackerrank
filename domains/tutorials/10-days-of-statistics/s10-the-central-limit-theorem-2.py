@@ -1,3 +1,5 @@
-import math, scipy.stats
+import math
+import scipy.stats
 
-print('%.4f' % scipy.stats.norm.cdf(250, loc=2.4*100, scale=2.0*math.sqrt(100)))
+print('%.4f' % scipy.stats.norm.cdf(
+    250, loc=2.4 * 100, scale=2.0 * math.sqrt(100)))
