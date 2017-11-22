@@ -6,7 +6,10 @@ inspecode:
     auto-fix: true
     config-file: /google_checks.xml
   pyflakes: default
-  yapf: default
+  yapf:
+    auto-fix: true
+    options:
+      --style: google
   autopep8: auto-fix
   misspell: auto-fix
   cpd: default
