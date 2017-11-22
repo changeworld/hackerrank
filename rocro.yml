@@ -1,4 +1,7 @@
 inspecode:
+  experimental:
+    runtime:
+      python: 3.6.3
   checkstyle:
     auto-fix: true
     config-file: /google_checks.xml
