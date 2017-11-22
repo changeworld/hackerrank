@@ -8,7 +8,8 @@ for grid_i in range(n):
     grid.append(grid_t)
 for i in range(1, (n - 2) + 1):
     for j in range(1, (n - 2) + 1):
-        if grid[i][j] > max(grid[i - 1][j], grid[i + 1][j], grid[i][j - 1], grid[i][j + 1]):
+        if grid[i][j] > max(grid[i - 1][j], grid[i + 1][j], grid[i][j - 1],
+                            grid[i][j + 1]):
             grid[i][j] = 'X'
 for i in range(n):
     print(''.join(grid[i]))

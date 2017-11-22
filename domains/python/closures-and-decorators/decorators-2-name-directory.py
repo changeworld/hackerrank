@@ -2,14 +2,19 @@ import operator
 
 
 def person_lister(f):
+
     def inner(people):
-        return [f(person) for person in sorted(people, key=operator.itemgetter(2))]
+        return [
+            f(person) for person in sorted(people, key=operator.itemgetter(2))
+        ]
+
     return inner
 
 
 @person_lister
 def name_format(person):
-    return ("Mr. " if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
+    return ("Mr. "
+            if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
 
 
 if __name__ == '__main__':

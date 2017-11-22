@@ -2,6 +2,7 @@ import math
 
 
 class Complex(object):
+
     def __init__(self, real, imaginary):
         self.real = real
         self.imaginary = imaginary
@@ -24,7 +25,8 @@ class Complex(object):
         b = self.imaginary
         c = no.real
         d = no.imaginary
-        return Complex((a * c + b * d) / (c * c + d * d), (b * c - a * d) / (c * c + d * d))
+        return Complex((a * c + b * d) / (c * c + d * d),
+                       (b * c - a * d) / (c * c + d * d))
 
     def mod(self):
         real = math.sqrt(self.real**2 + self.imaginary**2)
