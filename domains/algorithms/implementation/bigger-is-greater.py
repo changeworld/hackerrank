@@ -1,8 +1,10 @@
 def prev_permutation(s):
     return compute_permutations(s, lambda x, y: x >= y)
 
+
 def next_permutation(s):
     return compute_permutations(s, lambda x, y: x <= y)
+
 
 def compute_permutations(s, comparator):
     n = len(s)
@@ -15,8 +17,9 @@ def compute_permutations(s, comparator):
     while comparator(s[j], s[i - 1]):
         j -= 1
     s[i - 1], s[j] = s[j], s[i - 1]
-    s[i : ]  = s[n - 1: i - 1 : -1]
+    s[i:] = s[n - 1: i - 1: -1]
     return True
+
 
 for _ in range(int(input())):
     w = list(input())

@@ -1,28 +1,35 @@
 import math
 
+
 class Complex(object):
     def __init__(self, real, imaginary):
         self.real = real
         self.imaginary = imaginary
+
     def __add__(self, no):
         return Complex(self.real + no.real, self.imaginary + no.imaginary)
+
     def __sub__(self, no):
         return Complex(self.real - no.real, self.imaginary - no.imaginary)
+
     def __mul__(self, no):
         a = self.real
         b = self.imaginary
         c = no.real
         d = no.imaginary
         return Complex(a * c - b * d, b * c + a * d)
+
     def __truediv__(self, no):
         a = self.real
         b = self.imaginary
         c = no.real
         d = no.imaginary
         return Complex((a * c + b * d) / (c * c + d * d), (b * c - a * d) / (c * c + d * d))
+
     def mod(self):
         real = math.sqrt(self.real**2 + self.imaginary**2)
         return Complex(real, 0)
+
     def __str__(self):
         if self.imaginary == 0:
             result = "%.2f+0.00i" % (self.real)
@@ -36,9 +43,11 @@ class Complex(object):
         else:
             result = "%.2f-%.2fi" % (self.real, abs(self.imaginary))
         return result
+
+
 if __name__ == '__main__':
     c = map(float, input().split())
     d = map(float, input().split())
     x = Complex(*c)
     y = Complex(*d)
-    print(*map(str, [x+y, x-y, x*y, x/y, x.mod(), y.mod()]), sep='\n')
+    print(*map(str, [x + y, x - y, x * y, x / y, x.mod(), y.mod()]), sep='\n')

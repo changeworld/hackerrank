@@ -9,4 +9,4 @@ for _ in range(int(input())):
         d[n] = 0
     d[n] += p
 for n in d:
-    print(n+' '+str(d[n]))
+    print(n + ' ' + str(d[n]))

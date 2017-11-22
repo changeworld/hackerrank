@@ -1,5 +1,6 @@
-import math, scipy.stats
+import math
+import scipy.stats
 
-A, B = scipy.stats.norm.interval(0.95, loc=500, scale=80/math.sqrt(100))
+A, B = scipy.stats.norm.interval(0.95, loc=500, scale=80 / math.sqrt(100))
 print(A)
 print(B)

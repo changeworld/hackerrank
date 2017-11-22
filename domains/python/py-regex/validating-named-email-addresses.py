@@ -1,4 +1,5 @@
-import email.utils, re
+import email.utils
+import re
 
 for _ in range(int(input())):
     x = email.utils.parseaddr(input().strip())
