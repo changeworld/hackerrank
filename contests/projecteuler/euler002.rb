@@ -1,8 +1,9 @@
 #!/bin/ruby
 require 'matrix'
 
-def fibonacci i
-  (Matrix[[1,1], [1,0]]**i)[0,1]
+# :reek:UtilityFunction:public_methods_only: true
+def fibonacci num
+  (Matrix[[1,1], [1,0]]**num)[0,1]
 end
 
 arr = [0, 1, 1, 2]
