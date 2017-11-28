@@ -1,11 +1,14 @@
 #!/bin/ruby
 
+# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:FeatureEnvy:exclude
+# :reek:TooManyStatements { max_statements: 8 }
 def sorting(arr)
   cnt = 0
   (arr.size-1).times{
-    (arr.size-1).times{|i|
-      if arr[i] > arr[i+1]
-        arr[i + 1], arr[i] = arr[i], arr[i + 1]
+    (arr.size-1).times{|idx|
+      if arr[idx] > arr[idx+1]
+        arr[idx + 1], arr[idx] = arr[idx], arr[idx + 1]
         cnt += 1
       end
     }
