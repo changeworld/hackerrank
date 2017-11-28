@@ -1,22 +1,25 @@
-def palindrome?(s)
-  s.reverse == s
+# :reek:UtilityFunction:public_methods_only: true
+def palindrome?(str)
+  str.reverse == str
 end
 
-def palindrome_index(s)
-  return -1 if palindrome?(s)
-  (s.length/2).times{|i|
-    if s[i] != s[-(i+1)]
-      b = s[0...i]
-      a = s[i+1...s.length]
-      return i if palindrome?(b + a)
-      b = s[0...-(i+1)]
-      a = s[(s.length-i)...s.length]
-      return s.length-i-1 if palindrome?(b + a)
+# :reek:DuplicateMethodCall { max_calls: 5 }
+# :reek:FeatureEnvy:exclude
+# :reek:TooManyStatements { max_statements: 6 }
+def palindrome_index(str)
+  return -1 if palindrome?(str)
+  (str.length/2).times{|idx|
+    if str[idx] != str[-(idx+1)]
+      nb = str[0...idx]
+      na = str[idx+1...str.length]
+      return idx if palindrome?(nb + na)
+      nb = str[0...-(idx+1)]
+      na = str[(str.length-idx)...str.length]
+      return str.length-idx-1 if palindrome?(nb + na)
     end
   }
 end
 
 gets.strip.to_i.times{
-  s = gets.strip
-  puts palindrome_index(s)
+  puts palindrome_index(gets.strip)
 }

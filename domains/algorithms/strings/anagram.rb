@@ -9,8 +9,8 @@ def anagram(str)
   cnt = 0
   stra, strb = str[0, str.size/2], str[str.size/2, str.size-1]
   stra.chars{|ch|
-    if s2.include?(c1)
-      s2.slice!(c1)
+    if strb.include?(ch)
+      strb.slice!(ch)
     else
       cnt += 1
     end
@@ -18,7 +18,6 @@ def anagram(str)
   cnt
 end
 
-t = gets.strip.to_i
-for _ in (0..t-1)
+gets.strip.to_i.times{
   puts anagram(gets.strip)
-end
+}
