@@ -1,19 +1,22 @@
 #!/bin/ruby
 
+# :reek:DuplicateMethodCall { max_calls: 3 }
+# :reek:FeatureEnvy:exclude
+# :reek:TooManyStatements { max_statements: 11 }
 def insertion_sort(arr)
-  i = arr.length - 1
-  v = arr[i]
-  (i - 1).downto(0) do |j|
-    if arr[j] > v
-      arr[i] = arr[j]
-      i = j
+  idx = arr.length - 1
+  val = arr[idx]
+  (idx - 1).downto(0) do |num|
+    if arr[num] > val
+      arr[idx] = arr[num]
+      idx = num
       puts arr.join(' ')
-      if i == 0
-        arr[i] = v
+      if idx == 0
+        arr[idx] = val
         puts arr.join(' ')
       end
     else
-      arr[i] = v
+      arr[idx] = val
       puts arr.join(' ')
       break
     end
@@ -21,5 +24,4 @@ def insertion_sort(arr)
 end
 
 _ = gets
-arr = gets.strip.split.map(&:to_i)
-insertion_sort(arr)
+insertion_sort(gets.strip.split.map(&:to_i))
