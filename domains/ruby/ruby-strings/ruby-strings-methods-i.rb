@@ -1,4 +1,6 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+#!/bin/ruby
+
+# :reek:UtilityFunction:public_methods_only: true
 def process_text(arr)
   arr.map(&:strip)*' '
 end
