@@ -4,6 +4,11 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Project Euler #10: Summation of primes Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int t = scan.nextInt();
