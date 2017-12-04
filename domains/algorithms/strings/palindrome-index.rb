@@ -1,3 +1,5 @@
+#!/bin/ruby
+
 # :reek:UtilityFunction:public_methods_only: true
 def palindrome?(str)
   str.reverse == str
@@ -5,7 +7,7 @@ end
 
 # :reek:DuplicateMethodCall { max_calls: 5 }
 # :reek:FeatureEnvy:exclude
-# :reek:TooManyStatements { max_statements: 6 }
+# :reek:TooManyStatements { max_statements: 8 }
 def palindrome_index(str)
   return -1 if palindrome?(str)
   (str.length/2).times{|idx|
