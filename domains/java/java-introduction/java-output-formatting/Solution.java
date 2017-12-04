@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java Output Formatting Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("================================");

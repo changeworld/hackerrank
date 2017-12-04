@@ -3,6 +3,11 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java Currency Formatter Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     double payment = scanner.nextDouble();

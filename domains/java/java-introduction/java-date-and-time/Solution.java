@@ -3,6 +3,11 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java Date and Time Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int month = in.nextInt();
