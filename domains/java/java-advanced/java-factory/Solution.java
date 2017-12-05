@@ -20,21 +20,26 @@ class Cake implements Food {
 class FoodFactory {
   public Food getFood(String order) {
     try {
-      return (Food) Class.forName(order.substring(0, 1).toUpperCase() + order.substring(1)).newInstance();
+      return (Food) Class.forName(
+          order.substring(0, 1).toUpperCase() + order.substring(1)
+      ).newInstance();
     } catch (Exception e) {
       return null;
     }
-  } //End of getFood method
-} //End of factory class
+  }
+}
 
 public class Solution {
-  public static void main(String args[]) {
+  /**
+   * Java Factory Pattern Solution.
+   * @author changeworld
+   *
+   */
+  public static void main(String[] args) {
     Do_Not_Terminate.forbidExit();
     try {
       Scanner sc = new Scanner(System.in);
-      //creating the factory
       FoodFactory foodFactory = new FoodFactory();
-      //factory instantiates an object
       Food food = foodFactory.getFood(sc.nextLine());
       System.out.println("The factory returned " + food.getClass());
       System.out.println(food.getType());
