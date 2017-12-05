@@ -37,18 +37,24 @@ class Calculate {
   Calculate() throws IOException {
     sc = new Scanner(System.in);
     output = new Display();
-    if (sc == null) throw new IOException("dummy");
+    if (sc == null) {
+      throw new IOException("dummy");
+    }
   }
 
   int get_int_val() {
     int x = sc.nextInt();
-    if (x <= 0) throw new NumberFormatException("All the values must be positive");
+    if (x <= 0) {
+      throw new NumberFormatException("All the values must be positive");
+    }
     return x;
   }
 
   double get_double_val() {
     double x = sc.nextDouble();
-    if (x <= 0) throw new NumberFormatException("All the values must be positive");
+    if (x <= 0) {
+      throw new NumberFormatException("All the values must be positive");
+    }
     return x;
   }
 
@@ -58,12 +64,17 @@ class Calculate {
 }
 
 public class Solution {
+  /**
+   * Calculating Volume Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     DoNotTerminate.forbidExit();
     try {
       Calculate cal = new Calculate();
-      int T = cal.get_int_val();
-      while (T-- > 0) {
+      int t = cal.get_int_val();
+      while (t-- > 0) {
         double volume = 0.0;
         int ch = cal.get_int_val();
         if (ch == 1) {
@@ -94,8 +105,8 @@ public class Solution {
     } catch (DoNotTerminate.ExitTrappedException e) {
       System.out.println("Unsuccessful Termination!!");
     }
-  } //end of main
-} //end of Solution
+  }
+}
 
 /**
  * This class prevents the user form using System.exit(0)
@@ -107,13 +118,13 @@ class DoNotTerminate {
 
   public static void forbidExit() {
     final SecurityManager securityManager = new SecurityManager() {
-            @Override
-            public void checkPermission(Permission permission) {
-                if (permission.getName().contains("exitVM")) {
-                    throw new ExitTrappedException();
-                }
-            }
-        };
+      @Override
+      public void checkPermission(Permission permission) {
+        if (permission.getName().contains("exitVM")) {
+          throw new ExitTrappedException();
+        }
+      }
+    };
     System.setSecurityManager(securityManager);
   }
-} //end of Do_Not_Terminate
+}
