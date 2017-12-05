@@ -2,6 +2,11 @@ import java.security.Permission;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java Int to String Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Do_Not_Terminate.forbidExit();
     try {
@@ -19,7 +24,6 @@ public class Solution {
   }
 }
 
-//The following class will prevent you from terminating the code using exit(0)!
 class Do_Not_Terminate {
   public static class ExitTrappedException extends SecurityException {
     private static final long serialVersionUID = 1L;
@@ -27,13 +31,13 @@ class Do_Not_Terminate {
 
   public static void forbidExit() {
     final SecurityManager securityManager = new SecurityManager() {
-            @Override
-            public void checkPermission(Permission permission) {
-                if (permission.getName().contains("exitVM")) {
-                    throw new ExitTrappedException();
-                }
-            }
-        };
+      @Override
+      public void checkPermission(Permission permission) {
+        if (permission.getName().contains("exitVM")) {
+          throw new ExitTrappedException();
+        }
+      }
+    };
     System.setSecurityManager(securityManager);
   }
 }
