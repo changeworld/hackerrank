@@ -1,27 +1,29 @@
 #!/bin/ruby
 
+# The Array class extended for Between Two Sets
 class Array
   def lcm
-    self.inject{|a, b| a.lcm(b)}
+    self.inject{|fst, snd| fst.lcm(snd)}
   end
 
   def gcd
-    self.inject{|a, b| a.gcd(b)}
+    self.inject{|fst, snd| fst.gcd(snd)}
   end
 end
 
-def getTotalX(a, b)
-  s = a.lcm
-  e = b.gcd
+# :reek:TooManyStatements { max_statements: 6 }
+# :reek:UtilityFunction:public_methods_only: true
+def get_total_x(fst, snd)
+  st = fst.lcm
+  en = snd.gcd
   rtn = 0
-  (e/s).to_i.times do |i|
-    rtn = rtn + 1 if e%(s * (i+1)) == 0
-  end
+  (en/st).to_i.times{|idx|
+    rtn = rtn + 1 if en%(st * (idx+1)) == 0
+  }
   rtn
 end
 
 n, m = gets.strip.split.map(&:to_i)
-a = gets.strip.split.map(&:to_i)
-b = gets.strip.split.map(&:to_i)
-total = getTotalX(a, b)
-puts total
+fst = gets.strip.split.map(&:to_i)
+snd = gets.strip.split.map(&:to_i)
+puts get_total_x(fst, snd)
