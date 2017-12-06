@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 class Node {
-  Node left, right;
+  Node left;
+  Node right;
   int data;
 
   Node(int data) {
@@ -12,12 +13,10 @@ class Node {
 
 class Solution {
   public static int getHeight(Node root) {
-    // Write your code here
     if (root == null) {
       return -1;
     }
     return 1 + Math.max(getHeight(root.left), getHeight(root.right));
-    // Writed your code here
   }
 
   public static Node insert(Node root, int data) {
@@ -36,11 +35,11 @@ class Solution {
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int T = sc.nextInt();
+    int t = sc.nextInt();
     Node root = null;
-    while (T -- > 0) {
+    while (t -- > 0) {
       int data = sc.nextInt();
       root = insert(root,data);
     }
