@@ -1,29 +1,20 @@
 # create the Solution class
+# :reek:SubclassedFromCoreClass:enabled:false
 class Solution < Array
-  # complete the code
   alias :push_character :push
-  def enqueue_character(x)
+  def enqueue_character(_)
   end
   alias :pop_character :pop
   alias :dequeue_character :shift
 end
 
-# create Solution class object
 solution = Solution.new
-
-# read the input
 input = gets
-
-input.split('').each do |c|
-  # push the character to stack
+input.split('').each {|c|
   solution.push_character c
-  # enqueue the character to queue
   solution.enqueue_character c
-end
-
-# check if input string is palindrome or not
+}
 is_palindrome = true
-
 (input.length / 2).times do
   if solution.pop_character != solution.dequeue_character
     is_palindrome = false
@@ -31,7 +22,6 @@ is_palindrome = true
   end
 end
 
-# print if string is palindrome or not
 if is_palindrome
   puts "The word, #{input}, is a palindrome."
 else
