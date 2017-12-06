@@ -1,19 +1,24 @@
 #!/bin/ruby
+
 MAX = 5*10**6
 $tmp = {}
-def collatz(n)
-  return 0 if n < 2
-  n = n%2 == 0 ? n/2 : 3*n+1
-  $tmp[n] ||= collatz(n)+1
+# :reek:FeatureEnvy:exclude
+def collatz(num)
+  return 0 if num < 2
+  num = num%2 == 0 ? num/2 : 3*num+1
+  $tmp[num] ||= collatz(num)+1
 end
 
+# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:FeatureEnvy:exclude
+# :reek:TooManyStatements { max_statements: 11 }
 def longest_collatz_sequence(max)
-  a = 0.step(max).map{|i| [collatz(i),i]}
-  b = []
-  1.step(max){|i|
-    (a[i-1] <=> a[i]) == -1 ? b.push(a[i].last) : a[i] = a[i-1]
+  se = 0.step(max).map{|idx| [collatz(idx), idx]}
+  box = []
+  1.step(max){|idx|
+    (se[idx-1] <=> se[idx]) == -1 ? box.push(se[idx].last) : se[idx] = se[idx-1]
   }
-  b
+  box
 end
 
 # Resutl longest_collatz_sequence(MAX)
