@@ -3,7 +3,8 @@ import java.util.Queue;
 import java.util.Scanner;
 
 class Node {
-  Node left, right;
+  Node left;
+  Node right;
   int data;
 
   Node(int data) {
@@ -14,7 +15,6 @@ class Node {
 
 class Solution {
   static void levelOrder(Node root) {
-    // Write your code here
     Queue<Node> queue = new LinkedList<Node>();
     queue.offer(root);
     while (!queue.isEmpty()) {
@@ -27,10 +27,9 @@ class Solution {
       queue.offer(head.right);
     }
     System.out.println();
-    // Writed your code here
   }
 
-  public static Node insert(Node root,int data) {
+  public static Node insert(Node root, int data) {
     if (root == null) {
       return new Node(data);
     } else {
@@ -46,11 +45,11 @@ class Solution {
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int T = sc.nextInt();
+    int t = sc.nextInt();
     Node root = null;
-    while (T -- > 0) {
+    while (t -- > 0) {
       int data = sc.nextInt();
       root = insert(root, data);
     }
