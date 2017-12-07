@@ -12,11 +12,20 @@ public class Solution {
     return new String(a);
   }
 
+  /**
+   * Java Anagrams Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    String a = sc.next(), b = sc.next();
+    String a = sc.next();
+    String b = sc.next();
     boolean ret = isAnagram(a, b);
-    if (ret) System.out.println("Anagrams");
-    else System.out.println("Not Anagrams");
+    if (ret) {
+      System.out.println("Anagrams");
+    } else {
+      System.out.println("Not Anagrams");
+    }
   }
 }
