@@ -3,13 +3,22 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java List Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String s;
-    int n, x, y;
+    int n;
+    int x;
+    int y;
     n = sc.nextInt();
     List l = new ArrayList();
-    for (int i = 0; i < n; i++) l.add(sc.nextInt());
+    for (int i = 0; i < n; i++) {
+      l.add(sc.nextInt());
+    }
     n = sc.nextInt();
     for (int i = 0; i < n; i++) {
       s = sc.next();
@@ -22,6 +31,8 @@ public class Solution {
         l.remove(x);
       }
     }
-    for (int i = 0; i < l.size(); i++) System.out.print(l.get(i) + " ");
+    for (int i = 0; i < l.size(); i++) {
+      System.out.print(l.get(i) + " ");
+    }
   }
 }
