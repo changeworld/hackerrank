@@ -26,15 +26,19 @@ class MyMath {
 }
 
 public class Solution {
-
+  /**
+   * Java Lambda Expressions Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) throws IOException {
     MyMath ob = new MyMath();
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int T = Integer.parseInt(br.readLine());
+    int t = Integer.parseInt(br.readLine());
     PerformOperation op;
     boolean ret = false;
     String ans = null;
-    while (T-- > 0) {
+    while (t-- > 0) {
       String s = br.readLine().trim();
       StringTokenizer st = new StringTokenizer(s);
       int ch = Integer.parseInt(st.nextToken());
@@ -51,7 +55,6 @@ public class Solution {
         op = ob.is_palindrome();
         ret = ob.checker(op, num);
         ans = (ret) ? "PALINDROME" : "NOT PALINDROME";
-
       }
       System.out.println(ans);
     }
