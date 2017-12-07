@@ -1,6 +1,7 @@
 #!/bin/ruby
 
-def factorial(n)
-  n < 2 ? 1 : n * factorial(n-1)
+# :reek:FeatureEnvy:exclude
+def factorial(num)
+  num < 2 ? 1 : num * factorial(num-1)
 end
 p factorial(gets.to_i)
