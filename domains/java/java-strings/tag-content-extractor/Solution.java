@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Tag Content Extractor Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int testCases = Integer.parseInt(sc.nextLine());
@@ -10,9 +15,13 @@ public class Solution {
       boolean none = true;
       for (; ; ) {
         int start = line.indexOf("<", cur);
-        if (start < 0) break;
+        if (start < 0) {
+          break;
+        }
         int end = line.indexOf(">", start);
-        if (end < 0) break;
+        if (end < 0) {
+          break;
+        }
         String tag = line.substring(start + 1, end);
         if (tag.length() == 0 || tag.charAt(0) == '/') {
           cur = end++;
@@ -28,7 +37,9 @@ public class Solution {
         }
         cur = end++;
       }
-      if (none) System.out.println("None");
+      if (none) {
+        System.out.println("None");
+      }
       testCases--;
     }
   }
