@@ -12,7 +12,9 @@ class Hacker {
 
 public class InstanceOFTutorial {
   static String count(ArrayList mylist) {
-    int a = 0, b = 0, c = 0;
+    int a = 0;
+    int b = 0;
+    int c = 0;
     for (int i = 0; i < mylist.size(); i++) {
       Object element = mylist.get(i);
       if (element instanceof Student) {
