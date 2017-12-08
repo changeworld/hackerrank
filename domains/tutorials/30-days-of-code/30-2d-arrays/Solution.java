@@ -1,10 +1,16 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Day 11: 2D Arrays Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int hh = 6, ww = 6;
-    int arr[][] = new int[hh][ww];
+    int hh = 6;
+    int ww = 6;
+    int[][] arr = new int[hh][ww];
     for (int h = 0; h < hh; h++) {
       for (int w = 0; w < ww; w++) {
         arr[h][w] = Integer.parseInt(sc.next());
