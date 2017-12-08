@@ -1,7 +1,8 @@
 #!/bin/ruby
 
-def encryption(s)
-  s.shift.zip(*s)
+# :reek:UtilityFunction:public_methods_only: true
+def encryption(arr)
+  arr.shift.zip(*arr)
 end
 
 s = gets.strip
