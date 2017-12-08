@@ -1,19 +1,21 @@
+#!/bin/ruby
+
+# :reek:UtilityFunction:public_methods_only: true
 def select_arr(arr)
-  # select and return all odd numbers from the Array variable `arr`
-  arr.select {|a| a.modulo(2) == 1}
+  arr.select {|ar| ar.modulo(2) == 1}
 end
 
+# :reek:UtilityFunction:public_methods_only: true
 def reject_arr(arr)
-  # reject all elements which are divisible by 3
-  arr.reject {|a| a.modulo(3) == 0}
+  arr.reject {|ar| ar.modulo(3) == 0}
 end
 
+# :reek:UtilityFunction:public_methods_only: true
 def delete_arr(arr)
-  # delete all negative elements
-  arr.delete_if {|a| a < 0}
+  arr.delete_if {|ar| ar < 0}
 end
 
+# :reek:UtilityFunction:public_methods_only: true
 def keep_arr(arr)
-  # keep all non negative elements ( >= 0)
-  arr.keep_if {|a| a >= 0}
+  arr.keep_if {|ar| ar >= 0}
 end
