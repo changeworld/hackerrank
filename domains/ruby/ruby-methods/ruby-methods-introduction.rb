@@ -1,4 +1,6 @@
-# Your code here
-def prime?(n)
-  n > 1 && (2..n-1).all? {|i| n % i != 0}
+#!/bin/ruby
+
+# :reek:UtilityFunction:public_methods_only: true
+def prime?(num)
+  num > 1 && (2..num-1).all? {|idx| num % idx != 0}
 end
