@@ -12,7 +12,9 @@ public class Solution {
       int[] x = new int[]{-1, 1, m};
       for (int d : x) {
         int next = current + d;
-        if (next >= n) return true;
+        if (next >= n) {
+          return true;
+        }
         if (next > 0 && a[next] == 0) {
           queue.add(next);
           a[next] = 1;
@@ -22,6 +24,11 @@ public class Solution {
     return false;
   }
 
+  /**
+   * Java 1D Array (Part 2) Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int t = Integer.parseInt(sc.next());
@@ -29,7 +36,9 @@ public class Solution {
       int n = Integer.parseInt(sc.next());
       int m = Integer.parseInt(sc.next());
       int[] a = new int[n];
-      for (int i = 0; i < n; i++) a[i] = sc.nextInt();
+      for (int i = 0; i < n; i++) {
+        a[i] = sc.nextInt();
+      }
       System.out.println(judge(n, m, a) ? "YES" : "NO");
     }
   }
