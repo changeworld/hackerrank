@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
 public class Solution {
-  /**
-   * Migratory Birds Solution.
-   * @author changeworld
-   *
-   */
   static int migratoryBirds(int n, int[] ar) {
     int[] ary = new int[n];
     int max = 0;
@@ -22,6 +17,11 @@ public class Solution {
     return maxTypes;
   }
 
+  /**
+   * Migratory Birds Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int n = in.nextInt();
