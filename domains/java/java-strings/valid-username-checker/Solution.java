@@ -3,6 +3,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Solution {
+  /**
+   * Valid Username Regular Expression Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int testCases = Integer.parseInt(sc.nextLine());
