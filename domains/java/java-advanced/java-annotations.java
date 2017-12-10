@@ -30,6 +30,11 @@ class FamilyMember {
 }
 
 public class Solution {
+  /**
+   * Java Annotations Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int testCases = Integer.parseInt(in.nextLine());
