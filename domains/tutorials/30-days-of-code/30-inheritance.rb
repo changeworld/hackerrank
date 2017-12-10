@@ -18,6 +18,7 @@ class Student < Person
     @average = scores.map(&:to_i).reduce(:+)/scores.size
   end
 
+  # :reek:TooManyStatements { max_statements: 6 }
   def calculate
     @average >= 90 ? 'O' : @average >= 80 ? 'E' : @average >= 70 ? 'A' : @average >= 55 ? 'P' : @average >= 40 ? 'D' : 'T'
   end
