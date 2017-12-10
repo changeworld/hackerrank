@@ -1,4 +1,6 @@
-def sum_terms(n)
-  # your code here
-  (1..n).inject(0) {|sum, i| sum + (i ** 2) + 1}
+#!/bin/ruby
+
+# :reek:UtilityFunction:public_methods_only: true
+def sum_terms(num)
+  (1..num).inject(0) {|sum, idx| sum + (idx ** 2) + 1}
 end
