@@ -1,5 +1,7 @@
 #!/bin/ruby
 
+# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:UtilityFunction:public_methods_only: true
 def solve(grades)
   result = []
   grades.map{|grade|
