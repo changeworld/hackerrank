@@ -3,7 +3,6 @@ import java.util.Scanner;
 class Difference {
   private int[] elements;
   public int maximumDifference;
-  // Add your code here
 
   Difference(int[] elements) {
     this.elements = elements;
@@ -16,9 +15,14 @@ class Difference {
       }
     }
   }
-} // End of Difference class
+}
 
 public class Solution {
+  /**
+   * Day 14: Scope Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
