@@ -1,6 +1,6 @@
 public class Solution {
   /**
-   * Day 11: 2D Arrays Solution.
+   * Day 21: Generics Solution.
    * @author changeworld
    *
    */
@@ -11,7 +11,7 @@ public class Solution {
   }
 
   /**
-   * Day 11: 2D Arrays Solution.
+   * Day 21: Generics Solution.
    * @author changeworld
    *
    */
