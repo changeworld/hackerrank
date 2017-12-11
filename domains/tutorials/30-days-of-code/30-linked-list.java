@@ -12,7 +12,6 @@ class Node {
 
 class Solution {
   public static Node insert(Node head, int data) {
-    // Complete this method
     Node node = new Node(data);
     if (head == null) {
       return node;
@@ -34,11 +33,11 @@ class Solution {
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Node head = null;
-    int N = sc.nextInt();
-    while (N-- > 0) {
+    int n = sc.nextInt();
+    while (n-- > 0) {
       int ele = sc.nextInt();
       head = insert(head, ele);
     }
