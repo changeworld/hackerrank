@@ -6,15 +6,18 @@ class Solution {
   public static void main(String[] args) {
     Map<String, String> map = new HashMap<>();
     Scanner sc = new Scanner(System.in);
-    int N = sc.nextInt();
+    int n = sc.nextInt();
     sc.nextLine();
-    for (; 0 < N; N--) {
+    for (; 0 < n; n--) {
       map.put(sc.nextLine(), sc.nextLine());
     }
     while (sc.hasNext()) {
       String s = sc.nextLine();
-      if (map.containsKey(s)) System.out.println(s + "=" + map.get(s));
-      else System.out.println("Not found");
+      if (map.containsKey(s)) {
+        System.out.println(s + "=" + map.get(s));
+      } else {
+        System.out.println("Not found");
+      }
     }
   }
 }
