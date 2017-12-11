@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java 1D Array Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int n = scan.nextInt();
