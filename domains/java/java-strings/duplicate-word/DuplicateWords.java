@@ -4,10 +4,8 @@ import java.util.regex.Pattern;
 
 public class DuplicateWords {
   public static void main(String[] args) {
-
     String pattern = "(^|\\s)([^\\s]+)\\s\\2(\\s|$)";
     Pattern r = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
-
     Scanner in = new Scanner(System.in);
     int testCases = Integer.parseInt(in.nextLine());
     while (testCases > 0) {
