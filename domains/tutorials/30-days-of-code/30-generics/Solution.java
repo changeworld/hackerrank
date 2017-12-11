@@ -1,11 +1,21 @@
 public class Solution {
+  /**
+   * Day 11: 2D Arrays Solution.
+   * @author changeworld
+   *
+   */
   public static <E> void printArray(E[] inputArray) {
     for (E element : inputArray) {
       System.out.println(element);
     }
   }
 
-  public static void main(String args[]) {
+  /**
+   * Day 11: 2D Arrays Solution.
+   * @author changeworld
+   *
+   */
+  public static void main(String[] args) {
     Integer[] intArray = { 1, 2, 3 };
     String[] stringArray = { "Hello", "World" };
     printArray(intArray);
