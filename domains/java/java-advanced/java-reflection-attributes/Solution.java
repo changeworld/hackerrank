@@ -1,4 +1,9 @@
 public class Solution {
+  /**
+   * Java Reflection - Attributes Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Class student = Student.class;
     Method[] methods = student.getDeclaredMethods();
