@@ -11,7 +11,6 @@ abstract class Book {
 
   abstract void display();
 }
-// Write MyBook Class
 
 class MyBook extends Book {
   int price;
@@ -30,12 +29,17 @@ class MyBook extends Book {
 }
 
 public class Solution {
-  public static void main(String []args) {
+  /**
+   * Day 13: Abstract Classes Solution.
+   * @author changeworld
+   *
+   */
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String title = sc.nextLine();
     String author = sc.nextLine();
     int price = sc.nextInt();
-    Book new_novel = new MyBook(title, author, price);
-    new_novel.display();
+    Book novel = new MyBook(title, author, price);
+    novel.display();
   }
 }
