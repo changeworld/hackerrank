@@ -3,6 +3,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DuplicateWords {
+  /**
+   * Java Regex 2 - Duplicate Words Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     String pattern = "(^|\\s)([^\\s]+)\\s\\2(\\s|$)";
     Pattern r = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
