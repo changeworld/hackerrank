@@ -12,17 +12,15 @@ class Node {
 
 class Solution {
   public static Node removeDuplicates(Node head) {
-    // Write your code here
     for (Node node = head; node != null; node = node.next) {
       while (node.next != null && node.data == node.next.data) {
         node.next = node.next.next;
       }
     }
     return head;
-    // Writed your code here
   }
 
-  public static  Node insert(Node head, int data) {
+  public static Node insert(Node head, int data) {
     Node p = new Node(data);
     if (head == null) {
       head = p;
@@ -46,11 +44,16 @@ class Solution {
     }
   }
 
-  public static void main(String args[]) {
+  /**
+   * Day 24: More Linked Lists Solution.
+   * @author changeworld
+   *
+   */
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Node head = null;
-    int T = sc.nextInt();
-    while (T -- > 0) {
+    int t = sc.nextInt();
+    while (t -- > 0) {
       int ele = sc.nextInt();
       head = insert(head, ele);
     }
