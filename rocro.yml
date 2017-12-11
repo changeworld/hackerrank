@@ -15,5 +15,4 @@ inspecode:
   cpd: default
   reek: default
   grep: default
-  misspell: auto-fix
   rails_best_practices: default
