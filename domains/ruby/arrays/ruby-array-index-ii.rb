@@ -1,24 +1,26 @@
+#!/bin/ruby
+
+# :reek:UtilityFunction:public_methods_only: true
 def neg_pos(arr, index)
-  # return the element of the array at the position `index` from the end of the list
   arr[-index]
 end
 
+# :reek:UtilityFunction:public_methods_only: true
 def first_element(arr)
-  # return the first element of the array
   arr.first
 end
 
+# :reek:UtilityFunction:public_methods_only: true
 def last_element(arr)
-  # return the last element of the array
   arr.last
 end
 
-def first_n(arr, n)
-  # return the first n elements of the array
-  arr.take(n)
+# :reek:UtilityFunction:public_methods_only: true
+def first_n(arr, index)
+  arr.take(index)
 end
 
-def drop_n(arr, n)
-  # drop the first n elements of the array and return the rest
-  arr.drop(n)
+# :reek:UtilityFunction:public_methods_only: true
+def drop_n(arr, index)
+  arr.drop(index)
 end
