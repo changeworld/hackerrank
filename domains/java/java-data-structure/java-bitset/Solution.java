@@ -2,13 +2,20 @@ import java.util.BitSet;
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java BitSet Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt(), m = sc.nextInt();
+    int n = sc.nextInt();
+    int m = sc.nextInt();
     BitSet[] b = {new BitSet(n), new BitSet(n)};
     for (; m > 0; m--) {
       String str = sc.next();
-      int x = sc.nextInt(), y = sc.nextInt();
+      int x = sc.nextInt();
+      int y = sc.nextInt();
       if (str.equals("AND")) {
         b[x - 1].and(b[y - 1]);
       } else if (str.equals("OR")) {
