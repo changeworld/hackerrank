@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
@@ -11,7 +16,9 @@ public class Solution {
     int r = 0;
     for (int i = 0; i < n; i++) {
       for (int j = i + 1; j <= n; j++) {
-        if (a[j] - a[i] < 0) r++;
+        if (a[j] - a[i] < 0) {
+          r++;
+        }
       }
     }
     System.out.println(r);
