@@ -1,9 +1,3 @@
-def solveMeFirst (a, b)
-  # Hint: Type return a+b below
-  a + b
-end
+#!/bin/ruby
 
-val1 = gets.to_i
-val2 = gets.to_i
-sum = solveMeFirst(val1,val2)
-print (sum)
+p gets.to_i + gets.to_i
