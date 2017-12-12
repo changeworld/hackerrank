@@ -12,12 +12,12 @@ class Solution {
       s[i] = sc.next();
     }
     Arrays.sort(s, new Comparator<Object>() {
-            public int compare(Object a1, Object a2) {
-                BigDecimal b1 = new BigDecimal((String) a1);
-                BigDecimal b2 = new BigDecimal((String) a2);
-                return b2.compareTo(b1);
-            }
-        });
+        public int compare(Object a1, Object a2) {
+          BigDecimal b1 = new BigDecimal((String) a1);
+          BigDecimal b2 = new BigDecimal((String) a2);
+          return b2.compareTo(b1);
+        }
+    });
     for (int i = 0; i < n; i++) {
       System.out.println(s[i]);
     }
