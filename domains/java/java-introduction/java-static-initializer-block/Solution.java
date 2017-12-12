@@ -1,23 +1,29 @@
 import java.util.Scanner;
 
 public class Solution {
-  static int B, H;
+  static int b;
+  static int h;
   static boolean flag;
 
   static {
     Scanner sc = new Scanner(System.in);
-    B = sc.nextInt();
-    H = sc.nextInt();
-    if (B > 0 && H > 0) {
+    b = sc.nextInt();
+    h = sc.nextInt();
+    if (b > 0 && h > 0) {
       flag = true;
     } else {
       System.out.println("java.lang.Exception: Breadth and height must be positive");
     }
   }
 
+  /**
+   * Java Static Initializer Block Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     if (flag) {
-      int area = B * H;
+      int area = b * h;
       System.out.print(area);
     }
   }
