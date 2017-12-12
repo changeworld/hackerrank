@@ -1,11 +1,13 @@
 #!/bin/ruby
 
-def median(n)
-  return nil if n.empty?
-  if n.size % 2 == 0
-    (n[n.size/2-1]+n[n.size/2])/2.0
+# :reek:DuplicateMethodCall { max_calls: 4 }
+# :reek:UtilityFunction:public_methods_only: true
+def median(num)
+  return nil if num.empty?
+  if num.size % 2 == 0
+    (num[num.size/2-1]+num[num.size/2])/2.0
   else
-    n[n.size/2]
+    num[num.size/2]
   end
 end
 
