@@ -29,15 +29,24 @@ class Student implements Comparable<Student> {
 
   public int compareTo(Student that) {
     int c = Double.valueOf(this.cgpa).compareTo(that.cgpa);
-    if (c != 0) return -c;
+    if (c != 0) {
+      return -c;
+    }
     c = this.fname.compareTo(that.fname);
-    if (c != 0) return c;
+    if (c != 0) {
+      return c;
+    }
     c = Integer.valueOf(this.id).compareTo(that.id);
     return c;
   }
 }
 
 public class Solution {
+  /**
+   * Java Sort Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int testCases = Integer.parseInt(in.nextLine());
