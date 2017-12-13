@@ -14,6 +14,11 @@ public class Main {
     return it;
   }
 
+  /**
+   * Java Iterator Solution.
+   * @author changeworld
+   *
+   */
   @SuppressWarnings({"unchecked"})
   public static void main(String[] args) {
     ArrayList mylist = new ArrayList();
