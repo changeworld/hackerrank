@@ -9,8 +9,11 @@ class Solution {
       MessageDigest md = MessageDigest.getInstance("MD5");
       md.update(str.getBytes());
       byte[] digest = md.digest();
-      for (byte b : digest) System.out.printf("%02x", b);
+      for (byte b : digest) {
+        System.out.printf("%02x", b);
+      }
     } catch (Exception e) {
+      e.printStackTrace();
     }
   }
 }
