@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class Solution {
+  /**
+   * Java String Tokens Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String[] text = sc.nextLine().trim().split("[ !,?\\._'@]+", 0);
@@ -8,7 +13,9 @@ public class Solution {
       System.out.println(0);
     } else {
       System.out.println(text.length);
-      for (String s : text) System.out.println(s);
+      for (String s : text) {
+        System.out.println(s);
+      }
     }
   }
 }
