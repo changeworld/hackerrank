@@ -17,6 +17,11 @@ class Add {
 }
 
 public class Solution {
+  /**
+   * Java Varargs - Simple Addition Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     try {
       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
