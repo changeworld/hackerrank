@@ -1,14 +1,9 @@
 #!/bin/ruby
 require 'matrix'
 
-# :reek:UtilityFunction:public_methods_only: true
-def fibonacci num
-  (Matrix[[1,1], [1,0]]**num)[0,1]
-end
-
 arr = [0, 1, 1, 2]
 (4..83).each{|i|
-  fib = fibonacci i
+  fib = (Matrix[[1,1], [1,0]]**i)[0,1]
   arr << fib
 }
 gets.to_i.times{
