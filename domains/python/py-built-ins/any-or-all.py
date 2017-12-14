@@ -1,7 +1,8 @@
 #!/bin/python2
 
 import sys
-if sys.version_info[0] >= 3: raw_input = input
+if sys.version_info[0] >= 3:
+    raw_input = input
 
 raw_input()
 nums = map(int, raw_input().split())
