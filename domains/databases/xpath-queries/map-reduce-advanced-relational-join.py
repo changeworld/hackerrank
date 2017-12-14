@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import sys
 from collections import OrderedDict
 
@@ -22,7 +24,7 @@ class MapReduce:
             reducer(key, self.intermediate[key])
         self.result.sort()
         for item in self.result:
-            print item
+            print(item)
 
 
 mapReducer = MapReduce()
