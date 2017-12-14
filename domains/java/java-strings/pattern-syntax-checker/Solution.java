@@ -2,6 +2,11 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Solution {
+  /**
+   * Pattern Syntax Checker Solution.
+   * @author changeworld
+   *
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int testCases = Integer.parseInt(sc.nextLine());
