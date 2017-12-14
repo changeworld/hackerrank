@@ -21,9 +21,13 @@ class MapReduce:
         for key in self.intermediate:
             reducer(key, self.intermediate[key])
         self.result.sort()
-        for item in self.result:
-            print "{\"key\":\"" + item[0] + "\",\"value\":\"" + str(
-                item[1]) + "\"}"
+        for v in self.result:
+            if sys.version_info[0] < 3:
+                print "{\"key\":\"" + v[0] + "\",\"value\":\"" + str(
+                    v[1]) + "\"}"
+            elif sys.version_info[0] >= 3:
+                print("{\"key\":\"" + v[0] + "\",\"value\":\"" + str(
+                    v[1]) + "\"}")
 
 
 mapReducer = MapReduce()
