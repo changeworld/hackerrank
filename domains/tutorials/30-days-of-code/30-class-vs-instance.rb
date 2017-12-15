@@ -1,10 +1,14 @@
+#!/bin/ruby
+
+# The Person class defined for Day 4: Class vs. Instance
+# :reek:DuplicateMethodCall { max_calls: 2 }
 class Person
   attr_accessor :age
-  def initialize(initialAge)
-    puts 'Age is not valid, setting age to 0.' if initialAge<0
-    @age = initialAge<0 ? 0 : initialAge
+  def initialize(initial_age)
+    puts 'Age is not valid, setting age to 0.' if initial_age < 0
+    @age = initial_age < 0 ? 0 : initial_age
   end
-  def amIOld()
+  def am_i_old?
     case @age
     when 0 .. 12
       puts 'You are young.'
@@ -14,7 +18,18 @@ class Person
       puts 'You are old.'
     end
   end
-  def yearPasses()
-    @age = @age + 1
+  def year_passes
+    @age += 1
   end
 end
+
+gets.to_i.times{|i|
+  age = gets.to_i
+  person = Person.new(age)
+  person.am_i_old?
+  for j in (1..3) do
+    person.year_passes
+  end
+  person.am_i_old?
+  puts ""
+}
