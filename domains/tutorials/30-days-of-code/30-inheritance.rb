@@ -1,5 +1,6 @@
 #!/bin/ruby
 
+# The Person class defined for Day 12: Inheritance
 class Person
   def initialize(first_name, last_name, id)
     @first_name = first_name
@@ -12,6 +13,7 @@ class Person
   end
 end
 
+# The Student class defined for Day 12: Inheritance
 class Student < Person
   def initialize(first_name, last_name, id, scores)
     super(first_name, last_name, id)
