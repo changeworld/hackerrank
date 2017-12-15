@@ -1,17 +1,16 @@
 #!/bin/ruby
 
+# The Array class extended for Day 7: Pearson Correlation Coefficient I
 class Array
-  def calculate_correlation_coefficient(y)
+  # :reek:TooManyStatements { max_statements: 11 }
+  def calculate_correlation_coefficient(float)
     m_x = self.reduce(:+)/self.size.to_f
-    m_y = y.reduce(:+)/y.size.to_f
-
-    cov = self.zip(y).reduce(0){|s, (a,b)| s + (a-m_x) * (b-m_y)}
-
-    v_x = self.reduce(0){|s, e| s + (e-m_x) ** 2}
-    v_y = y.reduce(0){|s, e| s + (e-m_y) ** 2}
-
-    r = cov / Math.sqrt(v_x * v_y)
-    r.nan? ? 0 : r
+    m_y = float.reduce(:+)/float.size.to_f
+    cov = self.zip(float).reduce(0){|num, (fst,snd)| num + (fst-m_x) * (snd-m_y)}
+    v_x = self.reduce(0){|num, elm| num + (elm-m_x) ** 2}
+    v_y = float.reduce(0){|num, elm| num + (elm-m_y) ** 2}
+    ret = cov / Math.sqrt(v_x * v_y)
+    ret.nan? ? 0 : ret
   end
 end
 
