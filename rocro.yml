@@ -16,3 +16,4 @@ inspecode:
   reek: default
   grep: default
   rails_best_practices: default
+  scalastyle: default
