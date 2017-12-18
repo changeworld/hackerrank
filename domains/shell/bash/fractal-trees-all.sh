@@ -51,7 +51,7 @@ for row in {0..62}
 do
   for column in {0..99}
   do
-    index=$(($row * $columns + $column))
+    index=$((row * columns + column))
     if [[ ${mat[$index]} == 1 ]]
     then
       echo -n 1
