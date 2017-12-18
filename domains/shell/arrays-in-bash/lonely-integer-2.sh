@@ -1,4 +1,4 @@
 #!/bin/bash
 
-read
+read -r
 tr ' ' '\n' | sort | uniq -u
