@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tr -d '[a-z]'
+tr -d 'a-z'
