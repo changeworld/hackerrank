@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read X
-read Y
-read Z
+read -r X
+read -r Y
+read -r Z
 
 if [[ $X == $Y && $X == $Z ]]; then
     echo "EQUILATERAL"
