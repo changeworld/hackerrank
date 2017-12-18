@@ -21,7 +21,9 @@ class MyMath {
   }
 
   public static PerformOperation is_palindrome() {
-    return n -> String.valueOf(n).equals((new StringBuilder(String.valueOf(n))).reverse().toString());
+    return n -> String.valueOf(n).equals(
+        (new StringBuilder(String.valueOf(n))).reverse().toString()
+    );
   }
 }
 
