@@ -1,4 +1,4 @@
 #!/bin/bash
 
-s=$(cat);
-echo $s $s $s
+arr=($(cat))
+echo "${arr[@]}" "${arr[@]}" "${arr[@]}"
