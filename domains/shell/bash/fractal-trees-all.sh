@@ -41,10 +41,10 @@ draw() {
   do
     index=$((row_R * columns + column_R))
     mat[$index]=1
-    row_R=$(($row_R - 1))
-    column_R=$(($column_R + 1))
+    row_R=$((row_R - 1))
+    column_R=$((column_R + 1))
   done
-  draw $row_R $(($column_R - 1)) $(($size / 2)) $(($4 + 1))
+  draw $row_R $((column_R - 1)) $((size / 2)) $(($4 + 1))
 }
 draw 62 49 16 0
 for row in {0..62}
