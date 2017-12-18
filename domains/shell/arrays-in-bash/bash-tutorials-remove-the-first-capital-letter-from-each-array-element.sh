@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo $(sed "s/[A-Z]/\./")
+arr=($(sed "s/[A-Z]/\./"))
+echo "${arr[@]}"
