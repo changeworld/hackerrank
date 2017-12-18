@@ -1,15 +1,5 @@
 import java.util.Scanner;
 
-class Node {
-  int data;
-  Node next;
-
-  Node(int d) {
-    data = d;
-    next = null;
-  }
-}
-
 class Solution {
   public static Node removeDuplicates(Node head) {
     for (Node node = head; node != null; node = node.next) {
@@ -59,5 +49,15 @@ class Solution {
     }
     head = removeDuplicates(head);
     display(head);
+  }
+}
+
+class Node {
+  int data;
+  Node next;
+
+  Node(int d) {
+    data = d;
+    next = null;
   }
 }
