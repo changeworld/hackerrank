@@ -8,7 +8,7 @@ public class Solution {
    *
    */
   public static void main(String[] args) {
-    Do_Not_Terminate.forbidExit();
+    DoNotTerminate.forbidExit();
     try {
       Scanner in = new Scanner(System.in);
       int n = in.nextInt();
@@ -18,13 +18,13 @@ public class Solution {
       } else {
         System.out.println("Wrong answer.");
       }
-    } catch (Do_Not_Terminate.ExitTrappedException e) {
+    } catch (DoNotTerminate.ExitTrappedException e) {
       System.out.println("Unsuccessful Termination!!");
     }
   }
 }
 
-class Do_Not_Terminate {
+class DoNotTerminate {
   public static class ExitTrappedException extends SecurityException {
     private static final long serialVersionUID = 1L;
   }
