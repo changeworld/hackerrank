@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read X -r
-read Y -r
+read -r X
+read -r Y
 
 echo $(( X + Y ))
 echo $(( X - Y ))
