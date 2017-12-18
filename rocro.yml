@@ -17,3 +17,6 @@ inspecode:
   grep: default
   rails_best_practices: default
   scalastyle: default
+  shellcheck:
+    options:
+      --shell: bash
