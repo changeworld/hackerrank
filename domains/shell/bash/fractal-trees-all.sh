@@ -6,8 +6,8 @@ read -r n
 declare -a mat
 for i in {0..6299}
 do
-  row=$(($i / $columns))
-  column=$(($i % $columns))
+  row=$((i / columns))
+  column=$((i % columns))
   mat[$i]=0
 done
 draw() {
