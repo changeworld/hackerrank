@@ -21,14 +21,14 @@ draw() {
   local size=$3
   for ((i=0; i<size; i++))
   do
-    index=$(($row * $columns + $column))
+    index=$((row * columns + column))
     mat[$index]=1
-    row=$(($row - 1))
+    row=$((row - 1))
   done
   local row_L=$row
   local row_R=$row
-  local column_L=$(($column - 1))
-  local column_R=$(($column + 1))
+  local column_L=$((column - 1))
+  local column_R=$((column + 1))
   for ((i=0; i<size; i++))
   do
     index=$(($row_L * $columns + $column_L))
