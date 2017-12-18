@@ -2,7 +2,7 @@
 
 # 63 rows and 100 columnumns
 columns=100
-read n
+read -r n
 declare -a mat
 for i in {0..6299}
 do
