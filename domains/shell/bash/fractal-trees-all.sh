@@ -31,10 +31,10 @@ draw() {
   local column_R=$((column + 1))
   for ((i=0; i<size; i++))
   do
-    index=$(($row_L * $columns + $column_L))
+    index=$((row_L * columns + column_L))
     mat[$index]=1
-    row_L=$(($row_L - 1))
-    column_L=$(($column_L - 1))
+    row_L=$((row_L - 1))
+    column_L=$((column_L - 1))
   done
   draw $row_L $(($column_L + 1)) $(($size / 2)) $(($4 + 1))
   for ((i=0; i<size; i++))
