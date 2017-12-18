@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read X
-read Y
+read X -r
+read Y -r
 
 if (( $X < $Y )); then
     echo "X is less than Y"
