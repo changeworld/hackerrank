@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo $(cat)
+arr=($(cat))
+echo ${arr[@]}
