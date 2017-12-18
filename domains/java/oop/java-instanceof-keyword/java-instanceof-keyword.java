@@ -1,16 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Student {
-}
-
-class Rockstar {
-}
-
-class Hacker {
-}
-
-public class InstanceOFTutorial {
+public class InstanceOfTutorial {
   static String count(ArrayList mylist) {
     int a = 0;
     int b = 0;
@@ -54,4 +45,13 @@ public class InstanceOFTutorial {
     }
     System.out.println(count(mylist));
   }
+}
+
+class Student {
+}
+
+class Rockstar {
+}
+
+class Hacker {
 }
