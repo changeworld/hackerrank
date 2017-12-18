@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read input
+read -r input
 
 if [[ $input == 'Y' || $input == 'y' ]]; then
     echo "YES"
