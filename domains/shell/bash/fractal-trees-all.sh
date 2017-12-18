@@ -36,10 +36,10 @@ draw() {
     row_L=$((row_L - 1))
     column_L=$((column_L - 1))
   done
-  draw $row_L $(($column_L + 1)) $(($size / 2)) $(($4 + 1))
+  draw $row_L $((column_L + 1)) $((size / 2)) $(($4 + 1))
   for ((i=0; i<size; i++))
   do
-    index=$(($row_R * $columns + $column_R))
+    index=$((row_R * columns + column_R))
     mat[$index]=1
     row_R=$(($row_R - 1))
     column_R=$(($column_R + 1))
