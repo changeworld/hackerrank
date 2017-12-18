@@ -1,11 +1,11 @@
 #!/bin/bash
 
-read X -r
-read Y -r
+read -r X
+read -r Y
 
-if (( $X < $Y )); then
+if (( X < Y )); then
     echo "X is less than Y"
-elif (( $X > $Y )); then
+elif (( X > Y )); then
     echo "X is greater than Y"
 else
     echo "X is equal to Y"
