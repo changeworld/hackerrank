@@ -1,15 +1,5 @@
 import java.util.Scanner;
 
-class Node {
-  int data;
-  Node next;
-
-  Node(int d) {
-    data = d;
-    next = null;
-  }
-}
-
 class Solution {
   public static Node insert(Node head, int data) {
     Node node = new Node(data);
@@ -43,5 +33,15 @@ class Solution {
     }
     display(head);
     sc.close();
+  }
+}
+
+class Node {
+  int data;
+  Node next;
+
+  Node(int d) {
+    data = d;
+    next = null;
   }
 }
