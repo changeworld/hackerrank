@@ -3,13 +3,36 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+public class Solution {
+  /**
+   * Java Sort Solution.
+   * @author changeworld
+   *
+   */
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int testCases = Integer.parseInt(in.nextLine());
+
+    List<Student> studentList = new ArrayList<Student>();
+    while (testCases > 0) {
+      Student st = new Student(in.nextInt(), in.next(), in.nextDouble());
+      studentList.add(st);
+      testCases--;
+    }
+    Collections.sort(studentList);
+    for (Student st : studentList) {
+      System.out.println(st.getFname());
+    }
+  }
+}
+
 class Student implements Comparable<Student> {
   private int id;
   private String fname;
   private double cgpa;
 
   public Student(int id, String fname, double cgpa) {
-        super();
+    super();
     this.id = id;
     this.fname = fname;
     this.cgpa = cgpa;
@@ -38,28 +61,5 @@ class Student implements Comparable<Student> {
     }
     c = Integer.valueOf(this.id).compareTo(that.id);
     return c;
-  }
-}
-
-public class Solution {
-  /**
-   * Java Sort Solution.
-   * @author changeworld
-   *
-   */
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    int testCases = Integer.parseInt(in.nextLine());
-
-    List<Student> studentList = new ArrayList<Student>();
-    while (testCases > 0) {
-      Student st = new Student(in.nextInt(), in.next(), in.nextDouble());
-      studentList.add(st);
-      testCases--;
-    }
-    Collections.sort(studentList);
-    for (Student st : studentList) {
-      System.out.println(st.getFname());
-    }
   }
 }
