@@ -12,8 +12,6 @@ public class Solution {
     double b = sc.nextDouble();
     sc.nextLine();
     String c = sc.nextLine();
-    System.out.println("String: " + c);
-    System.out.println("Double: " + b);
-    System.out.println("Int: " + a);
+    System.out.println("String: " + c + "\nDouble: " + b + "\nInt: " + a);
   }
 }
