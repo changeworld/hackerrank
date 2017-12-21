@@ -46,12 +46,3 @@ public class InstanceOfTutorial {
     System.out.println(count(mylist));
   }
 }
-
-class Student {
-}
-
-class Rockstar {
-}
-
-class Hacker {
-}
