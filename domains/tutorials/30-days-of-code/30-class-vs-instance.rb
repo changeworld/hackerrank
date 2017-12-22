@@ -2,6 +2,7 @@
 
 # The Person class defined for Day 4: Class vs. Instance
 # :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:Attribute: false
 class Person
   attr_accessor :age
   def initialize(initial_age)
