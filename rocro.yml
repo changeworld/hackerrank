@@ -12,7 +12,10 @@ inspecode:
       --style: google
   autopep8: auto-fix
   misspell: auto-fix
-  cpd: default
+  cpd:
+    options:
+      --skip-duplicate-files:
+      --minimum-tokens: 100
   reek: default
   grep: default
   rails_best_practices: default
