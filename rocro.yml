@@ -12,7 +12,6 @@ inspecode:
       --style: google
   autopep8: auto-fix
   misspell: auto-fix
-  cpd: default
   reek: default
   grep: default
   rails_best_practices: default
