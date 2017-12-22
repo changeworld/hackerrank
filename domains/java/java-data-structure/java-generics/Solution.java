@@ -1,13 +1,5 @@
 import java.lang.reflect.Method;
 
-class Printer {
-  <T> void printArray(T[] input) {
-    for (T e : input) {
-      System.out.println(e);
-    }
-  }
-}
-
 public class Solution {
   /**
    * Java Generics Solution.
