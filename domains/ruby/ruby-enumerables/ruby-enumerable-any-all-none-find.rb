@@ -11,6 +11,7 @@ def func_all(hash)
 end
 
 # :reek:UtilityFunction:public_methods_only: true
+# :reek:NilCheck: false
 def func_none(hash)
   hash.none? {|key, value| value.nil?}
 end
