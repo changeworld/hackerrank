@@ -1,7 +1,5 @@
 #!/bin/python3
 
-import sys
-
 for i in range(int(input())):
     input()
     nums = list(map(int, input().split(' ')))
