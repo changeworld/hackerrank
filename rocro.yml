@@ -10,7 +10,6 @@ inspecode:
     auto-fix: true
     options:
       --style: google
-  autopep8: auto-fix
   misspell: auto-fix
   reek: default
   grep: default
