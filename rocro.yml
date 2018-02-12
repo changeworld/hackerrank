@@ -19,3 +19,4 @@ inspecode:
   shellcheck:
     options:
       --shell: bash
+  cppcheck: default
