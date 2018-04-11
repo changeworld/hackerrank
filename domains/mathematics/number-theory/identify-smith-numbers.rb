@@ -1,8 +1,9 @@
 #!/bin/ruby
 require 'prime'
 
-def calc(n)
-  n.to_s.chars.map(&:to_i).reduce(:+)
+# :reek:UtilityFunction:public_methods_only: true
+def calc(num)
+  num.to_s.chars.map(&:to_i).reduce(:+)
 end
 
 n = gets.to_i
