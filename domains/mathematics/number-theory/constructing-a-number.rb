@@ -1,7 +1,8 @@
 #!/bin/ruby
 
-def canConstruct(a)
-  a.join.split('').map(&:to_i).sum%3 == 0 ? 'Yes' : 'No'
+# :reek:UtilityFunction:public_methods_only: true
+def can_construct(arr)
+  arr.join.split('').map(&:to_i).sum%3 == 0 ? 'Yes' : 'No'
 end
 
 t = gets.strip.to_i
