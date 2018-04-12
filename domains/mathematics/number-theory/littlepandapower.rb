@@ -2,6 +2,7 @@
 
 require 'prime'
 
+# Add function to existing Integer class
 # :reek:FeatureEnvy:exclude
 class Integer
   def power_mod(y, m)
