@@ -3,6 +3,7 @@
 require 'prime'
 
 # Add function to existing Integer class
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:FeatureEnvy:exclude
 # :reek:UncommunicativeParameterName
 # :reek:UncommunicativeVariableName
