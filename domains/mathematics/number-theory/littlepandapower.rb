@@ -4,6 +4,7 @@ require 'prime'
 
 # Add function to existing Integer class
 # :reek:FeatureEnvy:exclude
+# :reek:UncommunicativeParameterName
 class Integer
   def power_mod(y, m)
     x = self, z = 1
