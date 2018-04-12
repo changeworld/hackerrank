@@ -2,6 +2,7 @@
 
 require 'prime'
 
+# :reek:FeatureEnvy:exclude
 class Integer
   def power_mod(y, m)
     x = self
