@@ -1,6 +1,6 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:UtilityFunction:public_methods_only: true
 def partition(arr)
   fst = arr.first

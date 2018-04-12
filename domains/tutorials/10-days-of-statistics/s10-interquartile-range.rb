@@ -1,6 +1,6 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 4 }
+# :reek:DuplicateMethodCall {max_calls: 4}
 # :reek:UtilityFunction:public_methods_only: true
 def median(num)
   return nil if num.empty?

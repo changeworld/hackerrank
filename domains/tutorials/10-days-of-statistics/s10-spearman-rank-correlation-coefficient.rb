@@ -2,7 +2,7 @@
 
 # The Array class extended for Day 7: Spearman's Rank Correlation Coefficient
 class Array
-  # :reek:TooManyStatements { max_statements: 11 }
+  # :reek:TooManyStatements {max_statements: 11}
   def calculate_correlation_coefficient(ar)
     m_x = self.reduce(:+)/self.size.to_f
     m_y = ar.reduce(:+)/ar.size.to_f
@@ -13,7 +13,7 @@ class Array
     result.nan? ? 0 : result
   end
 
-  # :reek:TooManyStatements { max_statements: 8 }
+  # :reek:TooManyStatements {max_statements: 8}
   def spearmans_rank_correlation_coefficient(ar)
     size = self.size
     arr = self.zip(ar).sort

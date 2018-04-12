@@ -11,7 +11,7 @@ g g g g g g ->  1
 
 class Integer
   # :reek:FeatureEnvy:exclude
-  # :reek:TooManyStatements { max_statements: 7 }
+  # :reek:TooManyStatements {max_statements: 7}
   def comb(inp)
     if inp == 0
       return 1

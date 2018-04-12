@@ -1,7 +1,7 @@
 #!/bin/ruby
 
 # :reek:UtilityFunction:public_methods_only: true
-# :reek:TooManyStatements { max_statements: 6 }
+# :reek:TooManyStatements {max_statements: 6}
 def convert_temp(num, option)
   celsius = case option[:input_scale]
     when 'kelvin' then num - 273.15

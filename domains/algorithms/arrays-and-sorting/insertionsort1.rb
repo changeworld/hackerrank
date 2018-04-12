@@ -1,8 +1,8 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 3 }
+# :reek:DuplicateMethodCall {max_calls: 3}
 # :reek:FeatureEnvy:exclude
-# :reek:TooManyStatements { max_statements: 11 }
+# :reek:TooManyStatements {max_statements: 11}
 def insertion_sort(arr)
   idx = arr.length - 1
   val = arr[idx]

@@ -9,9 +9,9 @@ def collatz(num)
   $tmp[num] ||= collatz(num)+1
 end
 
-# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:FeatureEnvy:exclude
-# :reek:TooManyStatements { max_statements: 11 }
+# :reek:TooManyStatements {max_statements: 11}
 def longest_collatz_sequence(max)
   se = 0.step(max).map{|idx| [collatz(idx), idx]}
   box = []

@@ -1,8 +1,8 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:FeatureEnvy:exclude
-# :reek:TooManyStatements { max_statements: 8 }
+# :reek:TooManyStatements {max_statements: 8}
 def sorting(arr)
   cnt = 0
   (arr.size-1).times{

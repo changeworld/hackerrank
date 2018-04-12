@@ -11,7 +11,7 @@ class Array
   end
 end
 
-# :reek:TooManyStatements { max_statements: 6 }
+# :reek:TooManyStatements {max_statements: 6}
 # :reek:UtilityFunction:public_methods_only: true
 def get_total_x(fst, snd)
   st = fst.lcm

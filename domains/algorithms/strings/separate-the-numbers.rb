@@ -1,6 +1,6 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:FeatureEnvy:exclude
 def beautiful_string(str)
   for idx in 1..(str.size/2)+1

@@ -1,9 +1,9 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 2 }
+# :reek:DuplicateMethodCall {max_calls: 2}
 # :reek:FeatureEnvy:exclude
-# :reek:NestedIterators { max_allowed_nesting: 2 }
-# :reek:TooManyStatements { max_statements: 7 }
+# :reek:NestedIterators {max_allowed_nesting: 2}
+# :reek:TooManyStatements {max_statements: 7}
 def insertion_sort(arr)
   (1..(arr.length-1)).each do |idx|
     (idx-1).downto(0) do |idex|

@@ -3,7 +3,7 @@
 # The Integer class extended for Day 4: Binomial Distribution II
 class Integer
   # :reek:FeatureEnvy:exclude
-  # :reek:TooManyStatements { max_statements: 7 }
+  # :reek:TooManyStatements {max_statements: 7}
   def comb(inp)
     if inp == 0
       return 1

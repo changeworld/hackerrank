@@ -2,7 +2,7 @@
 
 # The Array class extended for Day 7: Pearson Correlation Coefficient I
 class Array
-  # :reek:TooManyStatements { max_statements: 11 }
+  # :reek:TooManyStatements {max_statements: 11}
   def calculate_correlation_coefficient(float)
     m_x = self.reduce(:+)/self.size.to_f
     m_y = float.reduce(:+)/float.size.to_f

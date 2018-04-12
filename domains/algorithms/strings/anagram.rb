@@ -1,8 +1,8 @@
 #!/bin/ruby
 
-# :reek:DuplicateMethodCall { max_calls: 4 }
+# :reek:DuplicateMethodCall {max_calls: 4}
 # :reek:FeatureEnvy:exclude
-# :reek:TooManyStatements { max_statements: 7 }
+# :reek:TooManyStatements {max_statements: 7}
 # :reek:UtilityFunction:public_methods_only: true
 def anagram(str)
   return -1 if str.size % 2 == 1
