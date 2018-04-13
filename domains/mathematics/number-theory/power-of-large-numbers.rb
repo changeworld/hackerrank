@@ -1,6 +1,7 @@
 #!/bin/ruby
 
 MOD=1000000007
+# :reek:UtilityFunction:public_methods_only: true
 # :reek:UncommunicativeParameterName
 # :reek:UncommunicativeVariableName
 def base_exponent_mod(x, y)
