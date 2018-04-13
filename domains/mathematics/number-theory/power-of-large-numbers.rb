@@ -15,6 +15,6 @@ def base_exponent_mod(x, y)
 end
 
 gets.to_i.times{
-    x,y = gets.split.map(&:to_i)
-    p base_exponent_mod(x%MOD, y%~-MOD)
+  x,y = gets.split.map(&:to_i)
+  p base_exponent_mod(x%MOD, y%~-MOD)
 }
