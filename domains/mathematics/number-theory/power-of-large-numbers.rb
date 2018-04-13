@@ -2,6 +2,7 @@
 
 MOD=1000000007
 # :reek:UncommunicativeParameterName
+# :reek:UncommunicativeVariableName
 def base_exponent_mod(x, y)
   z = 1
   while y != 0
