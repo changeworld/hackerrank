@@ -1,6 +1,9 @@
 #!/bin/ruby
 
 MOD=1000000007
+# :reek:UtilityFunction:public_methods_only: true
+# :reek:UncommunicativeParameterName
+# :reek:UncommunicativeVariableName
 def base_exponent_mod(x, y)
   z = 1
   while y != 0
@@ -12,6 +15,6 @@ def base_exponent_mod(x, y)
 end
 
 gets.to_i.times{
-    x,y = gets.split.map(&:to_i)
-    p base_exponent_mod(x%MOD, y%~-MOD)
+  x,y = gets.split.map(&:to_i)
+  p base_exponent_mod(x%MOD, y%~-MOD)
 }
