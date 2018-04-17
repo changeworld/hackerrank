@@ -1,9 +1,11 @@
 import math
 
+
 def subcase(t, c1, c2, n1, n2):
     mincoins = math.ceil((t - c1 * min(n1, t // c1)) / c2)
     maxcoins = min(t // c2, n2)
     return max(maxcoins - mincoins + 1, 0)
+
 
 for _ in range(int(input())):
     n = int(input())
