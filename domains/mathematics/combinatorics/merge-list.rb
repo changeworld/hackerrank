@@ -2,6 +2,7 @@
 
 # :reek:FeatureEnvy:exclude
 # :reek:UncommunicativeParameterName
+# :reek:UncommunicativeVariableName
 class Integer
   def comb(x)
     return 1 if x == 0
