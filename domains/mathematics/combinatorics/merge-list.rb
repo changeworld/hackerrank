@@ -1,5 +1,6 @@
 #!/bin/ruby
 
+# :reek:FeatureEnvy:exclude
 class Integer
   def comb(x)
     return 1 if x == 0
