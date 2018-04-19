@@ -1,5 +1,6 @@
 #!/bin/ruby
 
+# Add function to existing Integer class
 # :reek:FeatureEnvy:exclude
 # :reek:TooManyStatements {max_statements: 6}
 # :reek:UncommunicativeParameterName
