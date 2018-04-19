@@ -1,5 +1,6 @@
 #!/bin/python3
 
+
 def calc(cards):
     l = len(cards)
     r = 1
@@ -9,6 +10,7 @@ def calc(cards):
             return 0
         r *= (v - i)
     return r % 1000000007
+
 
 for _ in range(int(input())):
     _ = input()
