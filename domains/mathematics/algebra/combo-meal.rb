@@ -1,5 +1,6 @@
 #!/bin/ruby
 
+# :reek:UncommunicativeParameterName
 def profit(b, s, c)
   s-c+b
 end
