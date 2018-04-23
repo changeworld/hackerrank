@@ -1,5 +1,6 @@
 #!/bin/ruby
 
+# :reek:UncommunicativeParameterName
 def perm(n, k)
   k.times.reduce(1){|s,i| s *= n-i}
 end
