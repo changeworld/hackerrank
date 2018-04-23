@@ -1,6 +1,7 @@
 #!/bin/ruby
 
 # :reek:UncommunicativeParameterName
+# :reek:UtilityFunction:public_methods_only: true
 def profit(b, s, c)
   s-c+b
 end
