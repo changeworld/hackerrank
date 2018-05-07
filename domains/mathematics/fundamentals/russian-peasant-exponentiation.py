@@ -12,7 +12,7 @@ def calc(a, b, p, m):
         if p % 2 == 1:
             resr, resi = square(resr, resi, a, b, m)
         a, b = square(a, b, a, b, m)
-        p = p//2
+        p = p // 2
     return resr, resi
 
 for _ in range(int(input())):
