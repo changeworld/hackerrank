@@ -1,3 +1,5 @@
+#!/bin/python3
+
 n = int(input())
 a = [int(i) for i in input().split()]
 o = pmean = sum(i * j for i, j in enumerate(a, 1))

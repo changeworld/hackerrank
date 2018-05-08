@@ -1,3 +1,5 @@
+#!/bin/python3
+
 from itertools import accumulate
 
 for _ in range(int(input())):
