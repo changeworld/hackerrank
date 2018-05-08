@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Solution {
   /**
-   * Little Gaurav and Sequence
+   * Little Gaurav and Sequence.
    * @author changeworld
    *
    */
