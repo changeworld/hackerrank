@@ -2,11 +2,13 @@
 
 from fractions import Fraction
 
+
 def preprocessing(n):
     if n.denominator == 1:
         return str(n.numerator) + '/1'
     else:
         return n
+
 
 for _ in range(int(input())):
     a, b, c = list(map(int, input().split()))
