@@ -15,6 +15,7 @@ def calc(a, b, p, m):
         p = p // 2
     return resr, resi
 
+
 for _ in range(int(input())):
     a, b, k, m = map(int, input().split(' '))
     ansr, ansi = calc(a, b, k, m)
