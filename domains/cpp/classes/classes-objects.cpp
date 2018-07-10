@@ -10,15 +10,15 @@ class Student {
     vector<int> arr;
     public:
         void input() {
-            for (int i = 0; i < 5; i++) {
+            for(int i = 0; i < 5; i++) {
                 int x;
-                scanf("%d",&x);
+                scanf("%d", &x);
                 arr.push_back(x);
             }
         }
         int calculateTotalScore() {
             int x = 0;
-            for (int i = 0; i < arr.size(); i++) {
+            for(int i = 0; i < arr.size(); i++) {
                 x += arr[i];
             }
             return x;
@@ -29,14 +29,14 @@ int main() {
     int n; // number of students
     cin >> n;
     Student *s = new Student[n]; // an array of n students
-    for (int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         s[i].input();
     }
     // calculate kristen's score
     int kristen_score = s[0].calculateTotalScore();
     // determine how many students scored higher than kristen
     int count = 0; 
-    for (int i = 1; i < n; i++) {
+    for(int i = 1; i < n; i++) {
         int total = s[i].calculateTotalScore();
         if (total > kristen_score) {
             count++;
@@ -44,5 +44,6 @@ int main() {
     }
     // print result
     cout << count;
+    delete [] s;
     return 0;
 }
