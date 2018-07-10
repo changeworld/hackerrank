@@ -45,5 +45,7 @@ int main(int argc, char *argv[]) {
     Available_Workshops * ptr;
     ptr = initialize(start_time,duration, n);
     cout << CalculateMaxWorkshops(ptr) << endl;
+    delete [] start_time;
+    delete [] duration;
     return 0;
 }
