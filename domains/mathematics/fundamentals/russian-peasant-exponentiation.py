@@ -2,7 +2,8 @@
 
 
 def square(ar, ai, br, bi, m):
-    return ((ar * br) % m - (ai * bi) % m) % m, ((ar * bi) % m + (ai * br) % m) % m
+    return ((ar * br) % m - (ai * bi) % m) % m, (
+        (ar * bi) % m + (ai * br) % m) % m
 
 
 def calc(a, b, p, m):

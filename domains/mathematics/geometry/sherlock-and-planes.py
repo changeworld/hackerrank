@@ -10,4 +10,5 @@ for _ in range(int(input())):
     x.sort()
     y.sort()
     z.sort()
-    print(["NO", "YES"][x[3] - x[0] == 0 or y[3] - y[0] == 0 or z[3] - z[0] == 0])
+    print(["NO", "YES"][x[3] - x[0] == 0 or y[3] - y[0] == 0 or
+                        z[3] - z[0] == 0])
